@@ -3,5 +3,5 @@ artifacthub.io stevehipwell
 
 ## charts use
 * jira
-* plantuml
+* [plantuml](https://artifacthub.io/packages/helm/stevehipwell/plantuml)
 * (not used) sonarqube
