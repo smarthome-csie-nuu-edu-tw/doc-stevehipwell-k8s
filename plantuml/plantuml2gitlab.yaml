@@ -3,11 +3,14 @@ ingress:
   annotations:
     kubernetes.io/ingress.class: "public"
     acme.cert-manager.io/http01-edit-in-place: "true"
-    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod-http01"
   hosts:
     - host: plantuml.mlc.app
+      paths:
+      - "/"
   tls:
-    - hosts: plantuml.mlc.app
+    - hosts: 
+      - plantuml.mlc.app
       secretName: plantuml-tls
 autoscaling:
   enabled:
